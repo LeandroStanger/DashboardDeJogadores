@@ -129,7 +129,8 @@ body::after,
 #conteudo3,
 #conteudo4,
 #conteudo5,
-#conteudo6 {
+#conteudo6,
+#conteudo7 {
     width: 100%;
     background: var(--color-bg-card);
     border-radius: var(--border-radius-medium);
@@ -146,6 +147,8 @@ body::after,
 #conteudo4 { border-top: 4px solid var(--color-accent-3); }
 #conteudo5 { border-top: 4px solid #ff6b35; }
 #conteudo6 { border-top: 4px solid var(--color-accent-6); }
+#conteudo7 { border-top: 4px solid #ff6b35; }
+
 
 /* CARDS DE JOGADOR */
 .jogador {
@@ -214,7 +217,8 @@ body::after,
 #conteudo3 h2,
 #conteudo4 h2,
 #conteudo5 h2,
-#conteudo6 h2 {
+#conteudo6 h2,
+#conteudo7 h2 {
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--color-text-primary);
@@ -255,19 +259,22 @@ body::after,
 }
 
 /* ESTILO ESPECÍFICO PARA MÉDIA DE IDADE */
-#conteudo5 .destaque {
+#conteudo5 .destaque,
+#conteudo7 .destaque {
     text-align: center;
     padding: 1.5rem;
 }
 
-#conteudo5 .maiorPiloto-item {
+#conteudo5 .maiorPiloto-item,
+#conteudo7 .maiorPiloto-item {
     background: transparent;
     border: none;
     font-size: 1.1rem;
     padding: 0;
 }
 
-#conteudo5 strong {
+#conteudo5 strong,
+#conteudo7 strong {
     display: block;
     font-size: 2rem;
     margin-top: 0.5rem;
@@ -341,7 +348,8 @@ body::after,
 #conteudo3,
 #conteudo4,
 #conteudo5,
-#conteudo6 {
+#conteudo6,
+#conteudo7 {
     animation: fadeIn 0.5s ease forwards;
     animation-delay: calc(var(--delay, 0) * 0.1s);
 }
@@ -416,7 +424,8 @@ body::after,
     #conteudo3,
     #conteudo4,
     #conteudo5,
-    #conteudo6 {
+    #conteudo6,
+    #conteudo7 {
         padding: 1.25rem;
     }
     
@@ -429,7 +438,8 @@ body::after,
         font-size: 0.95rem;
     }
     
-    #conteudo5 strong {
+    #conteudo5 strong,
+    #conteudo7 strong {
         font-size: 1.75rem;
     }
 }
@@ -455,7 +465,8 @@ body::after,
     #conteudo3,
     #conteudo4,
     #conteudo5,
-    #conteudo6 {
+    #conteudo6,
+    #conteudo7 {
         padding: 1rem;
     }
     
@@ -467,7 +478,8 @@ body::after,
         font-size: 0.9rem;
     }
     
-    #conteudo5 strong {
+    #conteudo5 strong,
+    #conteudo7 strong {
         font-size: 1.5rem;
     }
     
@@ -577,7 +589,8 @@ body::after,
     #conteudo3,
     #conteudo4,
     #conteudo5,
-    #conteudo6 {
+    #conteudo6,
+    #conteudo7 {
         border: 1px solid #000 !important;
         box-shadow: none !important;
         break-inside: avoid;

@@ -27,6 +27,7 @@ async function carregarDados() {
         jogadoresComMaisDe30Anos(jogadores);
         mediaDaIdade(jogadores);
         nomesDosJogadores(jogadores);
+        mediaHarmonica(jogadores);
     } catch (erro) {
         console.error("Erro ao carregar os dados:", erro);
     }
@@ -160,6 +161,28 @@ function nomesDosJogadores(jogadores) {
                     ${p.nome}
                 </div>
             `).join('')}
+        </div>
+    `;
+}
+
+function mediaHarmonica(jogadores) {
+      const somaInversos = jogadores.reduce((acc, val) => acc + 1 / val.idade, 0);
+    const media = jogadores.length / somaInversos;
+
+    const jogadoresOrdenados = [...jogadores].sort((a, b) => b.idade - a.idade);
+
+    let container = document.getElementById('conteudo7');
+
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'conteudo7';
+        document.body.appendChild(container);
+    }
+
+    container.innerHTML = `
+        <h2>Média Harmonica da Idade</h2>
+        <div class="destaque">
+            <p class="maiorPiloto-item">A média Harmonica de idade dos jogadores é: <strong>${media.toFixed(1)} anos</strong></p>
         </div>
     `;
 }
